@@ -1,0 +1,4 @@
+output "redis" {
+  value = aws_elasticache_parameter_group.redis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+}
+
