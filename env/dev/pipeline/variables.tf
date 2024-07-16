@@ -30,6 +30,3 @@ variable "sotatek-ecs-be-repo" {
 
 }
 
-variable "parameta-egg3-slackbot-repo" {
-
-}
