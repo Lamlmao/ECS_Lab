@@ -15,11 +15,11 @@ variable "gitBranch" {}
 variable "codepipelineRoleArn" {}
 variable "bucketName" {}
 
+variable "service_name" {}
 variable "codebuildRoleArn" {}
 variable "codedeployRoleArn" {}
 variable "codebuild_image" {}
 variable "codebuild_compute_type" {}
-
 # variable "github_repos" {}
 variable "codebuild_buildspec" {}
 variable "lambda_endpoint" {}

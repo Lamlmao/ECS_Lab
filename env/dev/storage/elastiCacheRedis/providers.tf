@@ -11,7 +11,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "statestorage123"
+    bucket         = "remotebackendecs"
     dynamodb_table = "state-lock"
     key            = "sotatek/mytfstate/ecs_lab/storage/elastiCacheRedis/elastiCacheRedis.tfstate"
     region         = "us-east-1"

@@ -90,8 +90,8 @@ resource "aws_codepipeline" "codepipeline_be" {
       version         = "1"
       configuration = {
         DeploymentTimeout = "20"
-        ClusterName       = "staging-egg3-kr-ecs"
-        ServiceName       = "backend-service"
+        ClusterName       = "dev-sotatek-ecs"
+        ServiceName       = "test-service"
         FileName          = "working_dir/${var.env}-${var.gitRepo}-artifact.json"
       }
     }
