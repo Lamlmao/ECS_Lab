@@ -27,7 +27,7 @@
       - yarn install
       - yarn build
       - echo "----------SYNC FILE TO S3 BUCKET----------------"
-      - aws s3 sync ./dist s3://staging-egg3-frontend
+      - aws s3 sync ./dist s3://sotatek-ecs-frontend
       - echo "----------CLEAR CACHE CLOUDFRONT----------------"
       - DISTRIBUTION_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[?Aliases.Items[0]=='aws.hugotech.online'].Id" --output text)
       - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
